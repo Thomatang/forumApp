@@ -1,4 +1,4 @@
-# vue-forum
+# WIP: forumAPP 
 
 ## Project setup
 ```
