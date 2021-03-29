@@ -3,16 +3,15 @@
 <Categorylist :categories="categories"/>
 </template>
 <script>
-import sourceData from '@/data.json'
 import Categorylist from '@/components/CategoryList'
 
 export default {
   components: {
     Categorylist
   },
-  data () {
-    return {
-      categories: sourceData.categories
+  computed: {
+    categories () {
+      return this.$store.state.categories
     }
   },
   setup () {
