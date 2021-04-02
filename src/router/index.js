@@ -4,6 +4,7 @@ import PageThreadShow from '@/pages/ThreadShow'
 import PageNotFound from '@/pages/NotFound'
 import Forum from '@/pages/Forum'
 import Category from '@/pages/Category'
+import Profile from '@/pages/Profile'
 import sourceData from '@/data.json'
 
 const routes = [
@@ -11,6 +12,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/me',
+    name: 'Profile',
+    component: Profile
   },
   {
     path: '/category/:id',
